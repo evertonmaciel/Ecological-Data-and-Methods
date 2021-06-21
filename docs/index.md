@@ -1,3 +1,7 @@
+
+![1](https://user-images.githubusercontent.com/50334341/122696287-244d6780-d219-11eb-84ed-c5e9bde457c9.jpg)
+
+
 ### Education
 
 #### Ph.D. in Plant Biology [University of Campinas](https://www.ib.unicamp.br/en)
@@ -17,5 +21,4 @@
 
 ##### Maciel, E. A., Oliveira-Filho, A. T., & Eisenlohr, P. V. (2016). [Prioritizing rare tree species of the Cerrado-Amazon ecotone: warnings and insights emerging from a comprehensive transitional zone of South America.](https://doi.org/10.1016/j.ncon.2016.10.002) Natureza & Conservação, 14(2), 74-82.
 
-#####![ype](https://user-images.githubusercontent.com/50334341/122696116-af7a2d80-d218-11eb-8b66-a4fea509dcb5.jpg)
- Maciel, E. A., & Eisenlohr, P. V. (2016). [On the collective analysis of species: how can Red Lists and lists of regional priorities be combined to assist in decision-making? A reply to Lõhmus (2015).](https://doi.org/10.1007/s10531-016-1068-z.) Biodiversity and Conservation, 25(3), 611-614.
+##### Maciel, E. A., & Eisenlohr, P. V. (2016). [On the collective analysis of species: how can Red Lists and lists of regional priorities be combined to assist in decision-making? A reply to Lõhmus (2015).](https://doi.org/10.1007/s10531-016-1068-z.) Biodiversity and Conservation, 25(3), 611-614.
