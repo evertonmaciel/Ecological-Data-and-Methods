@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome
 
 ### Education
 
@@ -7,9 +7,9 @@
 #### B.Sc in Biology [University of Mogy of Cruzes](http://www.umc.br/nucleos-pesquisa/sistematica/pessoas.php)
 #### Technician in Agriculture [Federal Institute of Education, Science and Technology of Alagoas](https://www2.ifal.edu.br/)
 
-## Production
+### Production
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Maciel, E. A. (2021). [An index for assessing the rare species of a community](https://www.sciencedirect.com/science/article/pii/S1470160X21000893). Ecological Indicators, 124, 107424.
 
 ```markdown
 Syntax highlighted code block
