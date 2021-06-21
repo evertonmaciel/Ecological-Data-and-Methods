@@ -1,6 +1,7 @@
 ## Welcome to GitHub Pages
 
-#Education
+##Education
+
 Ph.D. in Plant Biology [University of Campinas](https://www.ib.unicamp.br/en)
 M.Sc. in Ecology and Conservation [State University of Mato Grosso](http://nx.unemat.br/)
 B.Sc in Biology [University of Mogy of Cruzes](http://www.umc.br/nucleos-pesquisa/sistematica/pessoas.php)
