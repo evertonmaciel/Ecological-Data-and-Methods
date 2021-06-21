@@ -1,5 +1,3 @@
-## Welcome
-
 ### Education
 
 #### Ph.D. in Plant Biology [University of Campinas](https://www.ib.unicamp.br/en)
@@ -9,25 +7,8 @@
 
 ### Production
 
-Maciel, E. A. (2021). [An index for assessing the rare species of a community](https://www.sciencedirect.com/science/article/pii/S1470160X21000893). Ecological Indicators, 124, 107424.
+##### Maciel, E. A. (2021). [An index for assessing the rare species of a community](https://www.sciencedirect.com/science/article/pii/S1470160X21000893). Ecological Indicators, 124, 107424.
 
-```markdown
-Syntax highlighted code block
+##### Maciel, E. A., Martins, V. F., de Paula, M. D., Huth, A., Guilherme, F. A., Fischer, R., Giles, A., Barbosa, R.I., Cavassan, O., Martins, F. R. (2021). [Defaunation and changes in climate and fire frequency have synergistic effects on aboveground biomass loss in the brazilian savanna].(https://www.sciencedirect.com/science/article/abs/pii/S0304380021001903) Ecological Modelling, 454, 109628.
 
-# Header 1
-
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/evertonmaciel/Production/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+#### Maciel, E. A., & Arlé, E. (2020). [Rare7: An R package to assess the forms of rarity in a community].(https://doi.org/10.1016/j.ecolind.2020.106419) Ecological Indicators, 115, 106419.
