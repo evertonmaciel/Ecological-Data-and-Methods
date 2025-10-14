@@ -9,8 +9,8 @@
 ## São Paulo, 2025.
 ################################################################
 ## Obijetivos
-## Criar métricas de paisagem usando o pacote landscape métricas
-## Testar redundância das métricas de paisagem
+## Criar métricas de paisagem usando o pacote landscapemetrics
+## Testar redundância entre as métricas
 ###############################################################
 
 #Primeira etapa
@@ -70,24 +70,22 @@ resultados_classe <- resultados_classe[!is.na(resultados_classe$value), ]
 result <- resultados_classe%>% 
   filter(!grepl("(_cv|_sd)", metric))
 
-#teste de correlacao
-# inverter as colunas para as linhas
+## TESTE DE CORRELACAO COM TODAS AS METRICAS
+## inverter as colunas para as linhas
 df_wide <- result %>% 
   pivot_wider(id_cols = c(level, class), names_from = metric, values_from = value)
 
-# Identify the metric columns (all columns that were created from 'metric')
 metric_cols <- setdiff(names(df_wide), c( "level", "class"))
 
-# Compute Spearman correlation matrix, using pairwise complete observations
+## Calcular a matriz de correlação de Spearman, usando observações completas em pares
 cor_mat <- cor(df_wide %>% select(all_of(metric_cols)), method = "spearman", use = "pairwise.complete.obs")
 
-# Prepare the correlation matrix for plotting
+## Preparar a matriz de correlação 
 cor_df <- as.data.frame(as.table(cor_mat))
 names(cor_df) <- c("Metric1", "Metric2", "Correlation")
 
-
 png("grafico_correlacao.png", width = 1500, height = 1200)
-# Create a heatmap using ggplot2
+## Create a heatmap using ggplot2
 ggplot(cor_df, aes(x = Metric1, y = Metric2, fill = Correlation)) +
   geom_tile(color = "white") +
   geom_text(aes(label = sprintf("%.2f", Correlation)), color = "black", size = 4) +
@@ -100,5 +98,3 @@ dev.off()
 
 
 
-
- 
