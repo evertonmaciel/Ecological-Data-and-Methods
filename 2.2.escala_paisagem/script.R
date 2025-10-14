@@ -7,6 +7,9 @@
 ## Aula: Importância da escala em estudos de paisagem
 ## Prof. Dr. Everton Alves Maciel (everttonmaciel@gmail.com)
 ################################################################
+## Analisar o efeito da extensão e resolução espacial nos 
+## padrões de temperatura de São Paulo e Brasil
+################################################################
 ## caso nao tenham sido instalados
 #install.packages("raster")
 #install.packages("sf")
@@ -197,6 +200,7 @@ cor.test(altitude_sp$BR_elev,altitude_sp$temp1, method = "spearman")
 cor.test(altitude_sp$BR_elev,altitude_sp$temp2, method = "spearman")
 cor.test(altitude_sp$BR_elev,altitude_sp$temp3, method = "spearman")
 cor.test(altitude_sp$BR_elev,altitude_sp$temp4, method = "spearman")
+
 
 
 
