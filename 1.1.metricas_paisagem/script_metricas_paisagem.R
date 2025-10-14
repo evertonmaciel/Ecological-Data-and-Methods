@@ -8,10 +8,15 @@
 ## Prof. Dr. Everton Alves Maciel (everttonmaciel@gmail.com)
 ## São Paulo, 2025.
 ################################################################
+## Obijetivos
+## Criar métricas de paisagem usando o pacote landscape métricas
+## Testar redundância das métricas de paisagem
+###############################################################
 
+#Primeira etapa
+#Criar métricas de paisagem
 
-
-# pacotes necessários
+# pacotes para métricas de paisagem
 install.packages("landscapemetrics")
 install.packages("terra")
 
@@ -23,20 +28,21 @@ library(terra)
 list_lsm()
 
 
+# camadas de dados com diferentes clases de uso da terra
 data <- rast("classes_uso_terra.tif")
 plot(data)
 check_landscape(data)
 
+# métricas no nível de manchas
 resultado_machas <-calculate_lsm(data, level = "patch")
+write.csv(resultados_manchas,"class_result.csv")
 
-
+# métricas no nível de classe
 resultados_classe <-calculate_lsm(data, level = "class")
-
 write.csv(resultados_classe,"class_result.csv")
 
+# métricas no nível de paisagem
 resultados_paisagem <-calculate_lsm(data, level = "landscape")
-
-
 write.csv(resultados_paisagem,"landscape_result.csv")
 
 
@@ -44,20 +50,21 @@ write.csv(resultados_paisagem,"landscape_result.csv")
 
 
 ########################################
-#Manipular os resultados
+#Segunda etapa
+#Analisar a redundância das métricas de paisagem
 
-# excluir as colunas que nao fazem sentido
+
+## Pacotes necessário 
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+
+# excluir as colunas que não fazem sentido
 resultados_classe$layer <- NULL
 resultados_classe$id <- NULL
 
 #excluir os NAs da coluna value
 resultados_classe <- resultados_classe[!is.na(resultados_classe$value), ]
-
-
-## reorganizar a planilha de dados
-library(dplyr)
-library(tidyr)
-library(ggplot2)
 
 # remover os desvios padroes e os coeficietes de variacoes
 result <- resultados_classe%>% 
@@ -90,6 +97,7 @@ ggplot(cor_df, aes(x = Metric1, y = Metric2, fill = Correlation)) +
   theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)) +
   labs(title = "Spearman Correlation between Metric Parameters", x = "", y = "")
 dev.off() 
+
 
 
 
