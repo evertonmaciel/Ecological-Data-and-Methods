@@ -8,7 +8,7 @@
 ## Prof. Dr. Everton Alves Maciel (everttonmaciel@gmail.com)
 ## São Paulo, 2025.
 ################################################################
-## Obijetivos
+## Objetivos
 ## Criar métricas de paisagem usando o pacote landscapemetrics
 ## Testar redundância entre as métricas
 ###############################################################
@@ -95,6 +95,7 @@ ggplot(cor_df, aes(x = Metric1, y = Metric2, fill = Correlation)) +
   theme(axis.text.x = element_text(angle = 45, vjust = 1, hjust = 1)) +
   labs(title = "Spearman Correlation between Metric Parameters", x = "", y = "")
 dev.off() 
+
 
 
 
